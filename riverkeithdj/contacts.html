@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="content">
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.jpg" alt="website logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a target="_blank" href="events.html">Events</a>
+            <a target="_blank" href="contacts.html">Contacts</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h3>Reserve Your Place Now!</h3>    
+            <p>Please fill this form</p>
+        </section>
+
+        <section>
+            <div>
+                <input type="text" id="txtFrom" placeholder="Name" size="10">
+            </div>
+            <div>
+                <input type="text" id="txtFrom" placeholder="Email Address" size="10">
+            </div>
+            <div>
+                <input type="text" id="txtFrom" placeholder="Phone" size="10">
+            </div>
+            <div>
+                <input type="text" id="txtFrom" placeholder="Choose an event" size="10">
+            </div>
+            <button type="button" onclick="myFunction()">Send</button>
+          
+            <br>
+            <div id="demo"></div>
+
+            <script>
+                function myFunction() {
+                  document.getElementById("demo").innerHTML = "Thank you!";
+                }
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>DJ Keith Wright &copy; 2023 - Max Agafonov</p>
+        <p><a target="_blank" href="site-plan.html">Site Plan</a></p>
+        <p><a target="_blank" href="contacts.html">Contacts</a></p> 
+        <div class="social">
+             <a target="_blank" href="https://www.facebook.com/people/The-Irish-Cowboy-Page/100064006754125/">
+                 <img src="images/facebook.png" alt="facebook icon">
+             </a>
+             <a href="https://twitter.com">
+                 <img src="images/twitter.png" alt="twitter icon">
+             </a>
+             <a href="https://instagram.com">
+                 <img src="images/instagram.png" alt="instagram icon">
+             </a>
+        </div>
+     </footer>
+
+
+
+   </div> 
+
+
+</body>
+</html>
