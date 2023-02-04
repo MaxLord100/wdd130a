@@ -22,12 +22,12 @@ nav a:hover{
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 #hero-box {
     grid-column: 1/4;
-    grid-row: 1/3;
+    grid-row: 2/3;
     z-index: -1;
 }
 
@@ -51,6 +51,8 @@ nav a:hover{
 main section {
     text-align: center;
 }
+
+/* 10 fr 11 lines */
 
 .home-grid {
     display: grid;
