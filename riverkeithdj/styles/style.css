@@ -69,11 +69,17 @@ nav a:hover {
     padding: 2% 2%;
     border-radius: 10px;
     border: #F1FAEE solid;
-    box-shadow: #457B9D 5px 5px 10px;
-
+    box-shadow: #457B9D 0px 9px 1px;
+    cursor: pointer;
+    outline: none;
 }
 .book:hover{
     background-color: #E63946;
+}
+.book:active {
+    background-color: #457B9D;
+    box-shadow: 0px 0px 1px #457B9D;
+    transform: translateY(7px);
 }
 .home-grid{
     display: grid;
@@ -176,7 +182,9 @@ footer .social a{
     text-decoration: none;
     padding-top: 25px;
     margin-top: 100px;
-
+}
+footer .social a:hover {
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 900px) {
@@ -185,24 +193,71 @@ footer .social a{
         height: auto;
     }
     nav, footer {
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
     }
     nav a {
         display: block;
-        padding: 15px;
+        justify-items: center;
+        align-items: center;
     }
     #hero {
         margin-top: 0;
     }
-    #hero-msg {
-        margin-top: 0;
+    .book{
+        font-family:'Unbounded';
+        font-size:30px;
+        background-color: #1D3557;
+        padding: 2% 2%;
+        border-radius: 10px;
+        border: #F1FAEE solid;
+        box-shadow: #457B9D 0px 9px 1px;
+        cursor: pointer;
+        outline: none;
     }
-    #hero-msg h4 {
-        display: none;
+    .book:hover{
+        background-color: #E63946;
+    }
+    .book:active {
+        background-color: #457B9D;
+        box-shadow: 0px 0px 1px #457B9D;
+        transform: translateY(7px);
     }
     .home-title {
         font-size: 25px;
-        color: #FFB703;
+        color: #1D3557;
+    }
+    .events-img {
+        border: 10px solid #1D3557;
+        margin-top: 30px;
+        width: 20%;
+        transition: all .5s;
+        box-shadow: 5px 5px 10px #6f7364;
+        justify-items: center;
+    }
+    .podcasts-img {
+        border: 10px solid #1D3557;
+        width: 20%;
+        transition: all .5s;
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+    .contacts-img {
+        border: 10px solid #1D3557;
+        width: 20%;
+        transition:all .5s;
+        box-shadow: 5px 5px 10px #6f7364;
+    }
+    .events-img:hover {
+        opacity: 1.0;
+        transform: scale(1.1)
+    }
+    .podcasts-img:hover {
+        opacity: 1.0;
+        transform: scale(1.1)
+    }
+    .contacts-img:hover {
+        opacity: 1.0;
+        transform: scale(1.1)
     }
     #background {
         display: none;
@@ -211,6 +266,8 @@ footer .social a{
         width: 80%;
         display: block;
         margin: 0 auto;
+        justify-items: center;
+        align-items: center;
     }
     footer {
         margin-top: 25px;
