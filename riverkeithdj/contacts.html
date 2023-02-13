@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/contacts.css">
+    <title>Contacts</title>
 </head>
 <body>
    <div id="content">
@@ -19,35 +20,44 @@
         </nav>
     </header>
     
-    <main>
-        <section>
-            <h3>Reserve Your Place Now!</h3>    
+    <main class="contacts-grid">
+        <section class="contact-text">
+            <h2>Reserve Your Place Now!</h2>    
             <p>Please fill this form</p>
         </section>
 
-        <section>
-            <div>
-                <input type="text" id="txtFrom" placeholder="Name" size="10">
-            </div>
-            <div>
-                <input type="text" id="txtFrom" placeholder="Email Address" size="10">
-            </div>
-            <div>
-                <input type="text" id="txtFrom" placeholder="Phone" size="10">
-            </div>
-            <div>
-                <input type="text" id="txtFrom" placeholder="Choose an event" size="10">
-            </div>
-            <button type="button" onclick="myFunction()">Send</button>
-          
-            <br>
-            <div id="demo"></div>
+        <section class="contact-box">
+            <form action="action_page.php">
+            
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" size="20">
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Email Address" size="20">
+                
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" placeholder="Phone Number" size="20">
+                
+                <label for="event">Choose Event</label>
+                <select name="event" id="event">
+                    <option value="event1">Event 1</option>
+                    <option value="event2">Event 2</option>
+                    <option value="event2">Event 3</option>
+                    <option value="event2">Event 4</option>
+                    <option value="event2">Event 5</option>
+                    <option value="event2">Event 6</option>
+                </select>
+                <button type="button" onclick="myFunction()">Send</button>
+            
+                <br>
+                <div id="demo"></div>
 
-            <script>
-                function myFunction() {
-                  document.getElementById("demo").innerHTML = "Thank you!";
-                }
-            </script>
+                <script>
+                    function myFunction() {
+                    document.getElementById("demo").innerHTML = "Thank you!";
+                    }
+                </script>
+            </form>
         </section>
     </main>
     <footer>
